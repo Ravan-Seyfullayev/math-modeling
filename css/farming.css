@@ -1,0 +1,83 @@
+@import url("http://fonts.cdnfonts.com/css/charlestoning");
+* {
+  margin: 0;
+  padding: 0;
+}
+.farming_header {
+  text-align: center;
+  line-height: 40rem;
+  background: url("https://civileats.com/wp-content/uploads/2020/09/201001-rodale-institute-regenerative-agriculture-research-carbon-drawdown-overselling-hype-1-top.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  height: 40rem;
+  opacity: 0.6;
+}
+.farming_header_center {
+  opacity: 1;
+  display: inline-block;
+  justify-content: center;
+}
+.farming_header_center h1 {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  font-size: 4rem;
+  font-family: Arial;
+  width: auto;
+}
+.farming_organic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.farming_organic_image {
+  text-align: center;
+}
+.farming_organic_image img {
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 80%;
+}
+.farming_organic_text {
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+.farming_organic_text p {
+  margin-top: 3rem;
+  font-family: Arial;
+}
+.farming_organic_text h1 {
+  font-family: Comfortaa;
+}
+.farming_organic > div {
+  width: 50%;
+}
+.farming_plants {
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  height: 10rem;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+.farming_plant {
+  text-align: center;
+  border-radius: 1rem;
+  border: 2px solid rgb(54, 114, 5);
+  width: 15%;
+  height: 12rem;
+}
+.farming_plant img {
+  margin-top: 20px;
+  width: 50%;
+}
+.farming_plants h2 {
+  margin-top: 14px;
+  font-family: Comfortaa;
+  background: -webkit-linear-gradient(#358701, rgb(29, 157, 134));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
