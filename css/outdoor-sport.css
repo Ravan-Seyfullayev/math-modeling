@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    top: 5vh;
+}
+
+.border {
+    border: 1px solid cadetblue;
+    height: 100%;
+    transform: rotateY('90deg');
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row-1_img img {
+    width: 450px;
+    height: 230px;
+}
+
+
+.row-1_information {
+    width: 450px;
+    text-align: left;
+}
+
+
+.row-2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.row-2_img img {
+    width: 450px;
+    height: 230px;
+}
+
+
+.row-2_information {
+    width: 450px;
+    text-align: left;
+}
