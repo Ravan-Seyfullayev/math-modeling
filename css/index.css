@@ -98,7 +98,7 @@ nav .nav-links .book:hover {
     color: #358701;
   }
 
-  nav-links li {
+  .nav-links li {
     opacity: 1;
   }
 
@@ -116,17 +116,277 @@ nav .nav-links .book:hover {
 /*Nav End*/
 
 
+/*SPORT start*/
+.container {
+  position: relative;
+}
+.slide-1 {
+  background: url("../img/sport/basketball.jpg");
+}
+.slide-2 {
+  background: url("../img/sport/football.jpg");
+}
+.slide-3 {
+  background: url('../img/sport/American-Football-Backgrounds.png');
+}
+
+.slide-4 {
+  background: url('../img/sport/golf.jpg');
+}
+
+.slide-5 {
+  background: url('../img/sport/baseball.jpg');
+}
+
+.slide-6 {
+  background: url("../img/sport/tennis.jpg");
+}
+
+.slide-7 {
+  background: url('../img/sport/horse-riding.jpg');
+}
+
+.slide-8 {
+  background: url('../img/sport/volleyball.jpg');
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.caption {
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px 0px;
+}
+.caption h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 18px;
+  width: 50%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto ;
+}
+.caption p {
+  max-width: 600px;
+  width: 90%;
+  margin: 0px auto;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  line-height: 7.5em;
+}
+.arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  transform: background 500ms;
+}
+.arrow img {
+  width: 50px;
+}
+.arrow:hover {
+  background: rgba(0, 0, 0, .4);
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+
+.wrapper{
+  width: 1170px;
+  margin: 5px auto;
+}
+
+.wrapper h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+.single-services{
+  position: relative;
+  width: 23%;
+  height: 320px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 15px;
+  transition: .5s;
+  overflow: hidden;
+  float: left;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.single-services p{
+  color: #262626;
+  font-size: 14px;
+}
+
+.single-services h3{
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #262626;
+}
+
+.social{
+  width: 60px;
+  height: 60px;
+  border: 5px solid gray;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.social i{
+  font-size: 30px;
+  padding: 15px;
+}
+
+.single-services span{
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  transition: .7s;
+  transform: skewX(10deg);
+}
+
+section .sport-container{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+section .sport-container h1{
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+.sport-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.sport-container ul li {
+  letter-spacing: 1px;;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+  font-size: 15px;
+  list-style: none;
+}
+
+.sport-container ul li.active{
+  border-color: #c70039;;
+  color: #e84545;
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product .itembox {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 5px;
+  display: block;
+
+}
+.product .itembox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.sport-container .product .itembox.show{
+  animation: show .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+.sport-container .product .itembox.hide{
+  animation: hide .5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+
+@keyframes hide {
+  0%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(0);
+      width: 0;
+      height: 0;
+      margin: 0;
+  }
+}
+@keyframes show {
+  0%{
+    
+      transform: scale(0);
+      width: 0;
+      height: 0;
+      margin: 0;
+  }
+  100%{
+      transform: scale(1);
+     
+  }
+}
+
+@media(max-width: 468px){
+  .product .itembox {
+      width: 320px;
+      height: 250px;
+  }
+}
+/*SPORT end*/
 
 
 /*Footer Start*/
 
 footer {
   background-color: #231e18;
-  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding:50px;
 }
 
 footer .footer-left {
